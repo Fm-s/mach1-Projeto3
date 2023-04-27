@@ -1,0 +1,53 @@
+#resultWrapper{
+    max-height: 800px;
+    height: auto;
+    transition: max-height 400ms ease-in-out, opacity 500ms ease-in;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+#resultWrapper.heightLessStart {
+    max-height: 0;
+    opacity: 0;
+}
+
+.shortenLinkWrapper{
+    background-color: gray;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+}
+
+.shortenLink{
+    font-size: 3rem;
+}
+
+.shortenLink a {
+    text-decoration: none;
+    color: beige;
+}
+
+.linkDate{
+    position: absolute;
+    bottom: 5px;
+}
+
+.shareWrapper{
+    padding: 1rem;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shareWrapper button {
+    /* height: 36px; */
+    padding: 1rem;
+    font-size: 1.1rem;
+    box-shadow: var(--button-shadow);
+}
+

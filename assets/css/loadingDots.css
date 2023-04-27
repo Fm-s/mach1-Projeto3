@@ -1,0 +1,45 @@
+.loadingDots{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.loadingDots div:nth-child(1){
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+    animation: tredots 600ms ease-in-out infinite;
+}
+
+.loadingDots div:nth-child(2){
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+    animation: tredots 600ms ease-in-out infinite;
+    animation-delay: 200ms;
+}
+
+.loadingDots div:nth-child(3){
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+    animation: tredots 600ms ease-in-out infinite;
+    animation-delay: 400ms;
+}
+
+@keyframes tredots {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
