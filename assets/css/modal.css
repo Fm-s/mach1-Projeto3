@@ -1,0 +1,223 @@
+.template-modal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.template-modal .card{
+    width: 100%;
+    max-width: 960px;
+    background-color: #fff;
+    border-radius: 20px;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.template-modal .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.modal-control{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+}
+
+.template-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-edit-wrapper button {
+    width: 66px;
+    background-color: #21b117;
+}
+
+.btn-edit-wrapper button:hover {
+    background-color: rgb(18, 152, 23);
+}
+
+.btn-edit-wrapper button:active{
+    background-color:  rgb(23, 180, 23);
+}
+
+.btn-delete-wrapper button{
+    width: 74px;
+    color: #d32f2f;
+    background-color: transparent;
+    border: 1px solid rgba(211, 47, 47, 0.5);
+}
+
+.btn-delete-wrapper button:hover{
+    background-color: rgba(211, 47, 47, 0.5);
+}
+
+.btn-delete-wrapper button:active{
+    background-color: rgba(211, 47, 47, 0.3);;
+}
+
+.btn-modal-save button{
+    height: 42px;
+    width: 101px;
+}
+
+.btn-modal-cancel button{
+    height: 42px;
+    width: 113px;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-wrapper h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.confirm-box{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.confirm-box__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40vh;
+    padding: 25px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    gap: 40px;
+    height: fit-content;
+    background-color: #fff;
+}
+
+.confirm-box__card__header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.confirm-box__content{
+    font-size: 14px;
+}
+
+.confirm-box__control{
+    display: flex;
+    gap: 25px;
+}
+
+.confirm-box__control__btn{
+   width: 80px;
+   font-size: 18px;
+}
+
+.confirm-box__control__btn.yes{
+    background-color: #1baf56;
+}
+
+.confirm-box__control__btn.yes:hover{
+    background-color: #106532;
+}
+.confirm-box__control__btn.yes:active{
+    background-color: #178D46;
+}
+
+.confirm-box__control__btn.no{
+    background-color: #d80000;
+}
+
+.confirm-box__control__btn.no:hover{
+    background-color: #c01a1a;
+}
+
+.confirm-box__control__btn.no:active{
+    background-color: #FF0000;
+}
+
+.form-template{
+    max-width: 465px;
+}
+
+.form-template label {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.form-template input{
+    border: 0;
+    padding-left: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 451px;
+    height: 30px;
+}
+
+.form-template input::placeholder{
+    color: rgba(0, 0, 0, 0.38);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-template input:focus{
+    outline: 0;
+}
+
+.form-control{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.form-control:focus-within{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+}

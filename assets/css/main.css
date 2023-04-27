@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Roboto:wght@400;500;600;700&display=swap');
+@import url('./loadingDots.css');
+@import url('./toast.css');
+
+:root{
+    --header-height: 80px;
+    --header-margin: 80px;
+    --footer-height: 36px;
+    --button-shadow: 3px 5px 10px 3px rgba(0, 55, 55, 0.15), inset 0 0 10px 3px rgba(0, 55, 55, 0.15);
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+}
+
+header{
+    box-sizing: border-box;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--header-margin);
+    border-bottom: 2px solid rgba(205, 210, 210, 0.8);
+    box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.logoWrapper{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.logoWrapper img{
+    position: absolute;
+    height: 200%;
+    left: 20px;
+    top: -5px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.settingsWrapper{
+    width: 55px;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    animation: rotate 2s linear 0ms infinite forwards;
+    animation-play-state: paused;
+}
+
+.settingsWrapper:hover{
+    animation-play-state: running;
+}
+.settingsWrapper a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsWrapper img {
+    height: 60%;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin));
+}
+
+.card {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.hide {
+    display: none;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--footer-height);
+    font-size: 16px;
+    font-family: 'Copse', serif;
+    cursor: default;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

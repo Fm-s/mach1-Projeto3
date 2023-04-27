@@ -1,0 +1,64 @@
+@import url('./modal.css');
+
+.tblHeaders.tblGridRow {
+    background-color: rgb(174, 179, 179);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    border-top: 2px solid black;
+    border-left: 2px solid black;;
+    border-right: 2px solid black;;
+}
+
+#tblBody{
+    border: 1px solid black;
+    min-height: 2rem;
+}
+
+.tblNoData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    height: 3rem;
+    border: 1px solid black;
+}
+
+.tblGridRow {
+    display: grid;
+    grid-template-columns: minmax(0,240px)  auto minmax(0,180px) minmax(0,120px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    align-items: center;
+    padding: 10px 1rem;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    line-break: anywhere;
+}
+
+#tblBody .tblGridRow:nth-child(2n+1) {
+    background-color: rgb(235, 240, 240);
+}
+
+#tblBody .tblGridRow:hover {
+    background-color: darkgray;
+}
+
+.tblDataColumn{
+    font-size: 1rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pagination .leftCtrl {
+    display: flex;
+    gap: 10px;
+}

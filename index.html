@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-me-fy</title>
+    <script src="./assets/js/linkShorter.js" type="module" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/linkShorter.css">
+</head>
+<body>
+    <header>
+        <div class="logoWrapper">
+            <img src="./assets/imgs/mini-me-fy-logo.png" alt="logo">
+        </div>
+        <h1>Mini-me-fy</h1>
+        <div class="settingsWrapper">
+            <a href="gerencia.html">
+                <img src="./assets/imgs/settings.svg" alt="settings">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="urlInputWrapper">
+                <div class="HTTPSecure" id="httpSecuryWrapper">
+                    <span class="HTTPSecure">https://</span>
+                </div>
+                <div class="urlWrapper">
+                    <input type="url" id="urlInput">
+                </div>
+                <div id="resetWrapper">
+                    <button id="resetBtn">
+                        <img src="./assets/imgs/reset-icon.svg" alt="reset">
+                    </button>
+                </div>
+            </div>
+                <div class="btnWrapper">
+                    <button id="shortBtn">Minimefy Link</button>
+                </div>
+                <div class="heightLessStart" id="resultWrapper"></div>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; Mach1 - 2023</span>
+    </footer>
+</body>
+</html>

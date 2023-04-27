@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-me-fy | Config</title>
+    <script src="./assets/js/gerencia.js" type="module" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/gerencia.css">
+</head>
+<body>
+    <header>
+        <div class="logoWrapper">
+            <img src="./assets/imgs/mini-me-fy-logo.png" alt="logo">
+        </div>
+        <h1>Mini-me-fy</h1>
+        <div class="settingsWrapper">
+            <a href="./">
+                <img src="./assets/imgs/settings.svg" alt="settings">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Gerenciar Links</h2>
+            <h4>Domain:</h4>
+            <div id="linkListTbl">
+                <div class="tblHeaders tblGridRow">
+                    <div class="headerColumn">Link Encurtado</div>
+                    <div class="headerColumn">Link Original</div>
+                    <div class="headerColumn">Data/Hora</div>
+                    <div class="headerColumn">Ação</div>
+                </div>
+                <div id="tblBody">
+                </div>
+                <div class="pagination">
+                    <div class="leftCtrl">
+                        <div id="btnPrevWrapper"></div>
+                        <span>Pagina: <span id="pageNumber"></span></span>
+                        <div id="btnNextWrapper"></div>
+                    </div>
+                    <div class="rightCtrl">
+                        <label for="paginationSelect">Links por Pagina:</label>
+                        <select id="paginationSelect">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="150">150</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; Mach1 - 2023</span>
+    </footer>
+</body>
+</html>
