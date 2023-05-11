@@ -51,3 +51,9 @@
     box-shadow: var(--button-shadow);
 }
 
+.qrBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+

@@ -8,14 +8,6 @@ const render = (element,data) => {
     const sLink = new shortenLink(data);
     setTimeout(()=>{element.classList.remove('heightLessStart');},0);
 
-    const copyToClipBoard = () => {
-        return () => navigator.clipboard.writeText(sLink.shortURL)
-                            .then(()=>{
-                                // element.appendChild(divToast("Copiado com sucesso!"))
-                                popToast("Copiado para o ClipBoard com sucesso!",true);
-                            });
-    }
-
     const shortenLinkWrapperDiv = document.createElement('div');
     shortenLinkWrapperDiv.classList.add('shortenLinkWrapper');
 
@@ -59,12 +51,21 @@ const render = (element,data) => {
 
     element.appendChild(shareWrapperDiv);
 
+    function copyToClipBoard(){
+        return () => navigator.clipboard.writeText(sLink.shortURL)
+                            .then(()=>{
+                                // element.appendChild(divToast("Copiado com sucesso!"))
+                                popToast("Copiado para o ClipBoard com sucesso!",true);
+                            });
+    }
+
     function generateQrCode (){
         return () => {
             dotsServices(qrBtn,true);
             getQrCode(sLink.idString)
                 .then(res=>{
                     const qrDiv = document.createElement('div');
+                    qrDiv.classList.add('qrBox');
                     const qrImg = document.createElement('img');
                     qrImg.src = res;
                     qrDiv.appendChild(qrImg)

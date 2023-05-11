@@ -5,6 +5,9 @@ import popToast from "./services/toastService.js";
 import loadModal, { loadConfirm, generateInput } from "./services/modalService.js";
 import isValidUrl from "./util/validateUrl.js";
 
+
+//mach1-Projeto3
+
 let pagination_limit = 10;
 let current_page = 1;
 let prevOffset = [];
